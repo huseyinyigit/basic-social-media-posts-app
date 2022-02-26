@@ -164,7 +164,7 @@ export class PostService extends BaseService<Post> {
             ...postList
                 .flat()
                 .filter((v, i, a)=> a.findIndex(post => (post.id === v.id || post.description === v.description)) === i)
-                .sort(function(post1, post2){ return post2.created_at - post1.created_at })
+                .sort(function(post1, post2){ return post2.created_at - post1.created_at || post2.id - post1.id })
             ];
         
         return posts;
