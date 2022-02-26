@@ -1,5 +1,5 @@
 # enviroments
-.*env*
+#.*env*/
 
 # compiled outputUIHelper.scrollInto("#checkout-container", this.elementRef);
 /dist
